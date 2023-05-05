@@ -1,0 +1,11 @@
+[all]
+dev ansible_host=192.168.1.234 ansible_user=ec2-user
+prod ansible_host=192.168.1.146 ansible_user=ec2-user
+ubuntu ansible_host=192.168.1.85 ansible_user=ubuntu
+
+[dev]
+dev ansible_host=192.168.1.234 ansible_user=ec2-user
+ubuntu ansible_host=192.168.1.85 ansible_user=ubuntu
+
+[prod]
+prod ansible_host=192.168.1.146 ansible_user=ec2-user

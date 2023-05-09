@@ -1,11 +1,10 @@
 ---
-# tasks file for apache
+# tasks file for tomcat
 
-
-- name: Install Apache webserver on Redhat
+- name: Install tomcat on RHEL
   import_tasks: redhat.yml
   when: ansible_facts['os_family']|lower == 'redhat'
 
-- name: Install Apache webserver on Debian
+- name: Install tomcat on Debian
   import_tasks: debian.yml
   when: ansible_facts['os_family']|lower == 'debian'

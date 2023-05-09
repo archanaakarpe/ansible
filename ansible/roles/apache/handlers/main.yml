@@ -3,7 +3,7 @@
 
 
 - name: Restart httpd
-  service:
+  service: 
     name: httpd
     state: restarted
 
@@ -11,3 +11,4 @@
   service:
     name: apache2
     state: restarted
+      
